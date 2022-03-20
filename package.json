@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "name": "semana-js-expert-06",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server/index.js",
+    "live-reload": "nodemon server/index.js",
+    "test": "LOG_DISABLED=true NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest --no-cache --detectOpenHandles",
+    "test:watch": "LOG_DISABLED=true NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest --no-cache --detectOpenHandles --watchAll",
+    "test:coverage": "LOG_DISABLED=true NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest --no-cache --detectOpenHandles --coverage tests/unit"
+  },
+  "engines": {
+    "node": "17"
+  },
+  "devDependencies": {
+    "jest": "27",
+    "nodemon": "2"
+  },
+  "dependencies": {
+    "pino": "7.8.0",
+    "pino-pretty": "7.5.3"
+  }
+}
